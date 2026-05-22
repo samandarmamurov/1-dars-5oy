@@ -13,10 +13,10 @@ const randomBtnEl = document.querySelector("#random-btn");
 const body = document.body;
 
 randomBtnEl.style = `
-padding:10px 15px;
+padding:10px 20px;
 border: 2px solid red;
 border-radius:10px;
-color:blue;
+color:pink;
 cursor:pointer;
 
 `;
@@ -27,6 +27,6 @@ function getRandomHex() {
     hex += hexColor[Math.trunc(Math.random() * 16)];
   }
   body.style = `background-color: ${hex}`;
-  document.querySelector("h1").textContent = hex; 
+  document.querySelector("h1").textContent = hex; // ← shu qator qo'shildi
 }
 
