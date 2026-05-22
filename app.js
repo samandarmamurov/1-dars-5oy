@@ -14,9 +14,9 @@ const body = document.body;
 
 randomBtnEl.style = `
 padding:10px 20px;
-border: 2px solid red;
+border: 2px solid green;
 border-radius:10px;
-color:pink;
+color:red;
 cursor:pointer;
 
 `;
@@ -27,6 +27,6 @@ function getRandomHex() {
     hex += hexColor[Math.trunc(Math.random() * 16)];
   }
   body.style = `background-color: ${hex}`;
-  document.querySelector("h1").textContent = hex; // ← shu qator qo'shildi
+  document.querySelector("h1").textContent = hex; 
 }
 
